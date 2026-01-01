@@ -12,6 +12,12 @@ import {
   ChevronRight,
 } from 'lucide-react';
 
+// Import images from assets
+import image1 from './assets/image1.png';
+import image2 from './assets/image2.png';
+import image3 from './assets/image3.png';
+import image4 from './assets/image4.png';
+
 // Floating Balloon Component
 const Balloon = ({ color, delay }) => (
   <div
@@ -90,7 +96,7 @@ const App = () => {
       <div className="grid grid-cols-2 gap-3 md:gap-4">
         <div className="row-span-2 group relative overflow-hidden rounded-2xl border-4 border-white shadow-lg rotate-[-2deg] hover:rotate-0 transition-transform">
           <img
-            src="/image1.png"
+            src={image1}
             alt="Memory 1"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
@@ -101,7 +107,7 @@ const App = () => {
 
         <div className="group relative overflow-hidden rounded-2xl border-4 border-white shadow-lg rotate-[3deg] hover:rotate-0 transition-transform h-32 md:h-40">
           <img
-            src="/image2.png"
+            src={image2}
             alt="Memory 2"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
@@ -109,7 +115,7 @@ const App = () => {
 
         <div className="group relative overflow-hidden rounded-2xl border-4 border-white shadow-lg rotate-[-1deg] hover:rotate-0 transition-transform h-32 md:h-40">
           <img
-            src="/image3.png"
+            src={image3}
             alt="Memory 3"
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
@@ -118,7 +124,7 @@ const App = () => {
 
       <div className="group relative overflow-hidden rounded-2xl border-4 border-white shadow-lg hover:scale-[1.02] transition-transform h-48">
         <img
-          src="/image4.png"
+          src={image4}
           alt="Memory 4"
           className="w-full h-full object-cover"
         />
